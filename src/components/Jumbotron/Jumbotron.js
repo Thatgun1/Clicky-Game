@@ -1,8 +1,11 @@
+//sets up the reusable Jumbotron component
 import React from "react";
-import "./style.css";
+import "./Jumbotron.css";
 
-function Wrapper(props) {
-  return <div className="wrapper">{props.children}</div>;
-}
-
-export default Wrapper;
+const Jumbotron = () => (
+	<header className = "header">
+		<h1>Hero Clicky Game!</h1>
+		<h2>Test your memory!! Can you click on all 12 heros without clicking on the same one twice?? </h2>
+	</header>
+);
+export default Jumbotron;
